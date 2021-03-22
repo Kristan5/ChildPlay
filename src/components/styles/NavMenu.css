@@ -1,0 +1,7 @@
+.ant-menu-item {
+    background-color: rgb(109, 198, 118) !important;
+}
+
+.ant-menu-item:hover {
+    background-color: rgb(0, 0, 0) !important;
+}
