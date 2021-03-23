@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import NavMenu from './components/NavMenu';
 import Announcements from './components/Announcements';
+import Assignments from './components/Assignments';
+import Calendar from './components/Calendar';
+import Discussion from './components/Discussion';
+import Grades from './components/Grades';
+import Settings from './components/Settings';
+
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './App.css';
@@ -49,6 +55,11 @@ class App extends Component {
                   }}
                 >
                   <Route exact path="/" component={Announcements}/>
+                  <Route path="/assignments" component={Assignments}/>
+                  <Route path="/calendar" component={Calendar}/>
+                  <Route path="/grades" component={Grades}/>
+                  <Route path="/discussion" component={Discussion}/>
+                  <Route path="/settings" component={Settings}/>
                 </Content>
               </Layout>
             </Layout>

@@ -21,6 +21,26 @@ class NavMenu extends Component {
                 Announcements
                 <Link to="/"/>
               </Menu.Item>
+              <Menu.Item icon={<HomeOutlined />}>
+                Calendar
+                <Link to="/calendar"/>
+              </Menu.Item>
+              <Menu.Item icon={<HomeOutlined />}>
+                Assignments
+                <Link to="/assignments"/>
+              </Menu.Item>
+              <Menu.Item icon={<HomeOutlined />}>
+                Grades
+                <Link to="/grades"/>
+              </Menu.Item>
+              <Menu.Item icon={<HomeOutlined />}>
+                Discussion
+                <Link to="/discussion"/>
+              </Menu.Item>
+              <Menu.Item icon={<HomeOutlined />}>
+                Settings
+                <Link to="/settings"/>
+              </Menu.Item>
             </Menu>
         );
     }
