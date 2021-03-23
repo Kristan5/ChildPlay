@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import NavMenu from './components/NavMenu';
+import Announcements from './components/Announcements';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
 import './App.css';
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
 import {
   MenuUnfoldOutlined,
-  MenuFoldOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
+  MenuFoldOutlined
 } from '@ant-design/icons';
 
 const { Header, Sider, Content } = Layout;
@@ -25,7 +25,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <Router>
+        <div className="App">
         <Layout style={{minHeight: "100vh"}}>
               <Sider style={{backgroundColor: 'rgb(109, 198, 118)' }} trigger={null} collapsible collapsed={this.state.collapsed}>
                 <NavMenu/>
@@ -47,10 +48,12 @@ class App extends Component {
                     padding: 24,
                   }}
                 >
+                  <Route exact path="/" component={Announcements}/>
                 </Content>
               </Layout>
             </Layout>
-      </div>
+        </div>
+      </Router>
     );
   }
 }

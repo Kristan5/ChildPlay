@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
 import './styles/NavMenu.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import {
     HomeOutlined
@@ -19,6 +19,7 @@ class NavMenu extends Component {
             >
               <Menu.Item icon={<HomeOutlined />}>
                 Announcements
+                <Link to="/"/>
               </Menu.Item>
             </Menu>
         );
